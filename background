@@ -1,0 +1,14 @@
+import pygame as pg
+#b5f447 - number for green
+
+pg.init()
+background = pg.transform.smoothscale(pg.image.load("racetrack.png"), (1370,700))
+bg_str = pg.image.tostring(background, "RGB")
+bg_size = background.get_size()
+screen = pg.display.set_mode(bg_size)
+screen.blit(background, (0, 0))
+pg.display.update()
+
+run = True
+while run == True:
+    pg.time.delay(100) 
